@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Esercitazione 3-bis</title>
+    <script type="text/javascript" src="javascript/d3.v7.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div>
+        <h3>Proviamo la fase di ENTER</h3>
+        <p>Originariamente abbiamo un riquadro vuoto. Dopo il data binding...</p>
+        <svg id="svgenter" width="500" height="300"></svg>
+    </div>
+
+    <div>
+        <h3>Proviamo la fase di UPDATE</h3>
+        <p>Originariamente abbiamo un riquadro con 3 cerchi. Dopo il data binding...</p>
+        <svg id="svgupdate" width="500" height="300">
+            <circle id="c1" cx="75" cy="150" r="20" fill="blue"></circle>
+            <circle id="c2" cx="150" cy="150" r="20" fill="blue"></circle>
+            <circle id="c3" cx="225" cy="150" r="20" fill="blue"></circle>
+        </svg>
+    </div>
+
+    <div>
+        <h3>Proviamo la fase di REMOVE</h3>
+        <p>Originariamente abbiamo un riquadro con 5 cerchi. Dopo il data binding...</p>
+        <svg id="svgremove" width="500" height="300">
+            <circle id="c4" cx="75" cy="150" r="20" fill="blue"></circle>
+            <circle id="c5" cx="150" cy="150" r="20" fill="blue"></circle>
+            <circle id="c6" cx="225" cy="150" r="20" fill="blue"></circle>
+            <circle id="c7" cx="300" cy="150" r="20" fill="blue"></circle>
+            <circle id="c8" cx="375" cy="150" r="20" fill="blue"></circle>
+        </svg>
+    </div>
+
+</body>
+</html>

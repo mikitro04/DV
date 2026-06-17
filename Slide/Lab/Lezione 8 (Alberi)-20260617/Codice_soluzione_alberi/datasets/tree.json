@@ -1,0 +1,85 @@
+{
+  "name": "Cinema",
+  "children": [
+    {
+      "name": "Warner Bros",
+      "children": [
+        {
+          "name": "Action",
+          "children": [
+            { "name": "Superhero" },
+            { "name": "Spy" }
+          ]
+        },
+        {
+          "name": "Drama",
+          "children": [
+            { "name": "Historical" },
+            { "name": "Courtroom" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Disney",
+      "children": [
+        {
+          "name": "Animation",
+          "children": [
+            { "name": "3D Animation" },
+            { "name": "2D Animation" },
+            { "name": "Stop Motion" }
+          ]
+        },
+        {
+          "name": "Adventure",
+          "children": [
+            { "name": "Fantasy" },
+            { "name": "Family Adventure" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paramount",
+      "children": [
+        {
+          "name": "Science Fiction",
+          "children": [
+            { "name": "Space Opera" },
+            { "name": "Cyberpunk" }
+          ]
+        },
+        {
+          "name": "Thriller",
+          "children": [
+            { "name": "Psychological" },
+            { "name": "Mystery" },
+            { "name": "Crime" }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Universal Pictures",
+      "children": [
+        {
+          "name": "Comedy",
+          "children": [
+            { "name": "Romantic Comedy" },
+            { "name": "Satire" },
+            { "name": "Dark Comedy" }
+          ]
+        },
+        {
+          "name": "Horror",
+          "children": [
+            { "name": "Supernatural" },
+            { "name": "Slasher" },
+            { "name": "Found Footage" }
+          ]
+        }
+      ]
+    }
+  ]
+}

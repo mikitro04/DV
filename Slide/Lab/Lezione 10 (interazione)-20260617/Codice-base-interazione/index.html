@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interazione</title>
+  <link type="text/css" rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/d3.v7.js"></script>
+</head>
+<body>
+  <div id="firstChartContainer">
+    <h1>
+      Scatterplot e BarChart
+    </h1>
+
+    <svg id="scatterBarSVG" width="1900" height="900" >
+    </svg>
+
+    <div id="radioContainer">
+      <p> <b>Ordinamento</b> </p>
+      <div>
+        <input type="radio" id="ascending" name="sortOption" value="ascending" checked>
+        <label for="ascending">Crescente</label>
+      </div>
+
+      <div>
+        <input type="radio" id="descending" name="sortOption" value="descending">
+        <label for="descending">Decrescente</label>
+      </div>
+    </div>
+  </div>
+  <div id="secondChartContainer">
+      <h1>
+         LineChart e Brush
+      </h1>
+
+      <svg id="linechartsSVG" width="1900" height="900" >
+      </svg>
+  </div>
+
+</body>
+</html>
