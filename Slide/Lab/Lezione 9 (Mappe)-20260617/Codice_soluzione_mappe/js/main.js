@@ -21,20 +21,19 @@ async function getDataCSV(path){
 
 // Carica i dati della mappa e della popolazione
 async function map(){
-    const mapPaths = ['../datasets/africa.geojson',
-        '../datasets/africa_hd.geojson',
-        '../datasets/usa.geojson',
-        '../datasets/world.geojson'];
-    let data;
-    const idSVG = "mappaSVG";
-    // Carica simultaneamente i dati GeoJSON e CSV
+    const mapPaths = ['./datasets/africa.geojson',
+        './datasets/africa_hd.geojson',
+        './datasets/usa.geojson',
+        './datasets/world.geojson'];
+
     Promise.all(
         [getDataJSON(mapPaths[3]),
-        getDataCSV('../datasets/world_population.csv')]
-    ).then(
-        ([dataJSON, dataCSV]) => {
-            renderMap([dataJSON, dataCSV], idSVG);
-        }).catch(error => console.error('Error loading data: ', error));
+            getDataCSV('../datasets/world_population.csv')]
+    ).then(([dataJSON, dataCSV]) => {
+        const idSVG = "mappaSVG";
+        renderMap([dataJSON, dataCSV], idSVG);
+    }).catch(error => console.error('Error loading data:', error));
+
 }
 
 function renderMap(data, idSVG) {

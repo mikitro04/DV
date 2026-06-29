@@ -23,8 +23,6 @@ function esercizio0() {
     // C
     allCircles.attr("r", function (_, idx) {
         const r = get_radius(idx);
-        const d = 2*r;
-        console.log("[idx]", idx, "[idx+1]",  idx+1,"r=[10*(idx+1)]",  r, "d=[r*2]", d , `[BOX]=${d}x${d}`);
         return r;
     })
 }

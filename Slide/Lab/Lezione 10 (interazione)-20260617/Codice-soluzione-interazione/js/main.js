@@ -12,7 +12,7 @@ async function getDataCSV(path){
     //console.log(data);
 }
 async function scatterplotBarchart(){
-    const data = await getDataCSV('../datasets/trekking.csv');
+    const data = await getDataCSV('./datasets/trekking.csv');
     const idSVG = "scatterBarSVG";
     // Converto i campi numerici prima del rendering.
     let processedData = data.map(d =>
@@ -312,7 +312,7 @@ function barchart(data, config, svg, sort_bars, key, scaleColorDifficulty){
 }
 
 async function linechartBrush(){
-    const data = await getDataCSV('../datasets/dummy.csv');
+    const data = await getDataCSV('./datasets/dummy.csv');
     const idSVG = "linechartsSVG";
     // Parsing dei dati temporali e numerici per il line chart.
     let processedData = data.map(d =>

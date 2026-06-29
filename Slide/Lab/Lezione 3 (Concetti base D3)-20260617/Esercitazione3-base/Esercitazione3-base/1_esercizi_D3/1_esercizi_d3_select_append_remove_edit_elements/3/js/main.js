@@ -17,12 +17,20 @@ function main() {
         // B
         .on("mouseout", function () {
             // TODO Write your code here
+            const sel = d3.select(this);
+            sel.attr("fill", "black")
         })
         // C
         // TODO Write your code here
+        .on("click", function () {
+            d3.select(this).classed("selected", true)
+        })
 
         // D
         // TODO Write your code here
+        .on("contextmenu", function () {
+            d3.select(this).classed("selected", false)
+        })
 
 
     /**
@@ -30,4 +38,7 @@ function main() {
      * A) ed applica un evento contextmenu che prevenga il menu contestuale di default (event.preventDefault())
      */
     // TODO Write your code here
+    d3.select("svg").on("contextmenu", function (event) {
+        event.preventDefault();
+    })
 }

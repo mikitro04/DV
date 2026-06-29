@@ -9,7 +9,7 @@ async function main() {
 
 
 async function getData() {
-  const csv_path = "../dataset/bitcoin.csv";
+  const csv_path = "./dataset/bitcoin.csv";
   const data = await d3.csv(csv_path);
   console.log(data);
   return data
@@ -20,7 +20,7 @@ async function preprocessData(data) {
     const timeParser = d3.timeParse(dataStringFormat);
     return data.map(row => ({
         ...row,
-        'date': timeParser(row['date']),
+        'date': transitimeParser(row['date']),
         'value': +row['value']
     }))
 }
@@ -111,7 +111,6 @@ function linechart_tooltip(svg, gContainer, scaleX, scaleY, margin, w_chart, h_c
      */
     const rect_width = 55, rect_height = 30, rect_x = 0, rect_y = -5;
     const text_x = 5, text1_y = rect_height * (1 / 3) + rect_y, text2_y = rect_height * (2 / 3) + rect_y;
-
 
     // Inserisci il codice qui...
 }
