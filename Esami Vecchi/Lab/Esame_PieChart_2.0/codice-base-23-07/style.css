@@ -1,0 +1,65 @@
+/* Reset di base, font moderno e sfondo in tinta con il banner */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #3b5998;
+}
+
+/* Banner Header a tema Social (Gradiente acceso stile Instagram/TikTok) */
+.page-header {
+    background: #3b5998;
+    padding: 40px 20px;
+    color: white;
+    margin-bottom: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
+}
+
+.page-header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* Stile a "Scheda" (Card) per contenere il grafico e farlo risaltare sullo sfondo colorato */
+.chart-container {
+    display: inline-block;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    padding: 20px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease;
+}
+
+.reset-btn {
+    padding: 10px 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.reset-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Pulizia dell'SVG per adattarsi alla card */
+svg {
+    border-radius: 8px;
+    background-color: transparent;
+}
